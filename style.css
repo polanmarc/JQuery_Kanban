@@ -1,0 +1,273 @@
+/* Reset de estilos */
+html, body, div, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dl, dt, dd, img, form, fieldset, input, textarea, blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+}
+
+tbody {
+    height: 100px;
+}
+
+#mainPage {
+    background-color: #f0f0f0;
+}
+
+div {
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+#mainPage table {
+    border: 1px solid #ccc;
+}
+
+#mainPage th,#mainPage td {
+    padding: 8px;
+    text-align: left;
+}
+
+#mainPage thead {
+    background-color: #f2f2f2;
+}
+
+#mainPage tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Estilos específicos para las tablas */
+.sortable th {
+    cursor: pointer;
+}
+
+/* Estilos para el modal */
+#myModal {
+    display: none;
+    background-color: #fff;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#myModal h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#myModal form {
+    margin-top: 20px;
+}
+
+#myModal label {
+    display: block;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+#myModal input[type="text"],
+#myModal input[type="date"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#myModal input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#myModal input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos específicos */
+.docs {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+#selectable {
+    background-color: green;
+    color: white;
+}
+
+/* Estilos específicos para la papelera */
+.trashContainer {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.trashTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.trashTable thead {
+    background-color: #ddd;
+}
+
+.trashTable th {
+    padding: 10px;
+    text-align: left;
+}
+
+.trashTable tbody tr {
+    transition: background-color 0.3s ease;
+}
+
+.trashTable tbody tr:hover {
+    background-color: #eee;
+}
+
+/* Estilos para el header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header a:hover {
+    color: rgb(255, 187, 0);
+    transition: 0.6s;
+}
+
+/* Kanban Page */
+
+#kanbanPage {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #fff;
+}
+
+#kanbanPage div {
+    width: calc(33.33% - 40px);
+    min-height: 600px;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+}
+
+#kanbanPage div h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #007bff;
+}
+
+#kanbanPage tr {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#kanbanPage tbody {
+    height: 300px;
+}
+
+#kanbanPage table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#kanbanPage th, #kanbanPage td {
+    padding: 10px;
+    text-align: left;
+}
+
+.nota {
+    color: #007bff;
+}
+
+.nota, .tipus {
+    font-weight: bold;
+}
+
+.dataInici, .dataFinal {
+    font-size: 14px;
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    width: 150px;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#openModalBtn {
+    margin-top: 20px;
+}
+
+#openModalTrash {
+    background-color: #dc3545;
+}
+
+#openModalTrash:hover {
+    background-color: #c82333;
+}
+
+.container {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

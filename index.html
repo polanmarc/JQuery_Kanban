@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script defer src="script.js"></script>
+</head>
+
+<body id="mainPage">
+    <header>
+        <h1>Proyecto Sprint</h1>
+        <p>Administra tus tareas de forma eficiente</p>
+        <a href="kanban.html">Kanban</a>
+    </header>
+
+    <div class="container">
+        <div class="redimensionar">
+            <h1 class="docs">Sprint</h1>
+            <table class="tabla">
+                <thead>
+                    <tr>
+                        <th>Tasca</th>
+                        <th>Tipus</th>
+                        <th>Data d'inici</th>
+                        <th>Data final</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodySprint" class="sort">
+                </tbody>
+            </table>
+        </div>
+    
+        <div class="redimensionar">
+            <h1>Backlog</h1>
+            <table class="tabla insertElement">
+                <thead>
+                    <tr>
+                        <th>Tasca</th>
+                        <th>Tipus</th>
+                        <th>Data d'inici</th>
+                        <th>Data final</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyBacklog" class="sort">
+                </tbody>
+            </table>
+        </div>
+    
+        <button id="openModalBtn">Abrir Modal</button>
+    
+        <div id="trash" class="trashContainer connectedSortable">
+            <table class="trashTable">
+                <thead>
+                    <tr>
+                        <th>Trash</th>
+                    </tr>
+                </thead>
+                <tbody id="trashBody" class="sort">
+                </tbody>
+            </table>
+            <button id="openModalTrash">Recuperar Tareas de la Basura</button>
+        </div>
+    
+        <div id="myModal" title="Crear Tarea">
+            <form class="task-form">
+                <label for="inpNota">Nota</label>
+                <input type="text" name="inpNota" class="inpNota">
+                <label for="inpTipus">Tipus</label>
+                <input type="text" name="inpTipus" class="inpTipus">
+                <label for="inpDataInici">Data Inici</label>
+                <input type="date" name="inpDataInici" class="inpDataInici">
+                <label for="inpDataFinal">Data Final</label>
+                <input type="date" name="inpDataFinal" class="inpDataFinal">
+            </form>
+        </div>
+    
+        <div id="modalTrash" title="Recuperar Tareas">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tasca</th>
+                        <th>Tipus</th>
+                        <th>Data d'inici</th>
+                        <th>Data final</th>
+                    </tr>
+                </thead>
+                <tbody id="tbodyRecoverTrash" class="sort">
+    
+                </tbody>
+            </table>
+        </div>
+        
+    </div>    
+
+</body>
+
+</html>
